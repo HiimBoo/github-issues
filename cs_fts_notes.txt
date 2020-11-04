@@ -1,0 +1,16 @@
+Here is another note about the workflow that you will repeat over and over again:
+- Create a new folder for the project/assignment
+- git init to initialize git for version control
+- Work on the project/assignment
+- git add * to take all of your changes to the staging area
+- git commit -m "a meaningful message"
+- Keep working on another feature, commit your code often to make sure you don't lose it or you can undo things
+- After you finish, create a Github repository on the Github website
+- git remote add origin the_url_of_your_github_repo to connect your local repo with the Github repo
+- git push origin master to push your code to the Github repo
+- It's ok to keep working on your project, just remember to push your most recent code to Github repo
+- Send the link of your Github repo to Minh
+_________________________________________________________________________________________________________________
+
+
+Conflicts -> origin? -> inline? -> spacificity? -> orther? -> result 
