@@ -14,3 +14,44 @@ ________________________________________________________________________________
 
 
 Conflicts -> origin? -> inline? -> spacificity? -> orther? -> result 
+
+_________________________________________________________________________________________________________________
+
+Position Properties
+
+- Static it will NOT react to the following properties:
+
+    top
+    bottom
+    left
+    right
+    z-index
+
+- But Relative do react to those following properties
+- Both Static and Relative remain in the natural flow of the page and act as an anchor point for the a
+positioned pink block
+
+- Absolute NOT remain in the natural flow of the page. It will position ifself according to the absolutely 
+closest positioned ancestor.
+
+_________________________________________________________________________________
+
+Cursor priority: Link -> visited -> hover -> active
+
+___________________________________________________________________________________________________________________
+
+MUST HAVE ON TOP OF EVERY CSS
+
+/* Applies border box sizing to the root element */
+:root {
+  box-sizing: border-box;
+}
+
+/* Tell all other elements and psudo-elements to inherit their box sizing */
+* ::after,
+::before {
+  box-sizing: inherit;
+}
+
+_____________________________________________________________________________________________________________________
+
