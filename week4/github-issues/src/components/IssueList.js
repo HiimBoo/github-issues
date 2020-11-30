@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Media, Button } from "react-bootstrap";
 import ReactMarkdown from "react-markdown";
 import Moment from "react-moment";
-import IssueModal from "./IssueModal";
 
 const IssueList = ({ itemList, setShowModal, showModal, issueUserClicked }) => {
   return (
@@ -46,7 +45,9 @@ const Item = ({ item }) => {
         </span>
         <div>
           <ReactMarkdown>
-            {item.body.length <= 100 ? item.body : item.body.slice(0, 99)}
+            {item.body.length <= 100
+              ? item.body
+              : item.body.slice(0, 99) + "..."}
           </ReactMarkdown>
         </div>
       </Media.Body>
